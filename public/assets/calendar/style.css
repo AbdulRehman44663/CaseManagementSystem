@@ -1,0 +1,146 @@
+.calendar-container {
+    background: #F1F2F2;
+    padding: 20px 10%;
+    border-radius: 10px;
+}
+
+.calendar .day {
+    border-radius: 10px;
+    width: 32px;
+    color: #6A6A6A;
+    text-align: center;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.calendar .day.today {
+    color: white;
+    border-radius: 10px;
+    background: #126C9B;
+}
+
+.calendar .day.has-event {
+    color: white;
+    /* background: #FCAF3B; */
+}
+
+.calendar .day.has-event::after {
+    display: none;
+}
+
+.calendar td {
+    color: #6A6A6A;
+    font-family: "DM Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 12px;
+    letter-spacing: 0.36px;
+    text-transform: uppercase;
+}
+
+.calendar header .month {
+    color: #126C9B;
+    text-align: center;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.calendar header .simple-calendar-btn {
+    border: none;
+}
+
+.calendar header .simple-calendar-btn:before {
+    content: '';
+    top: 8px;
+    left: 7px;
+    width: 14px;
+    height: 14px;
+    border-width: 2px 2px 0 0;
+    border-color: #6A6A6A;
+}
+
+.calendar header .simple-calendar-btn:hover {
+    background: unset;
+}
+
+.calendar table {
+    margin: 0;
+    margin-top: 18px;
+}
+
+.calendar td {
+    padding: 0 .1em;
+}
+
+.calendar thead td {
+    padding-bottom: 18px !important;
+}
+
+.calendar header {
+    border-bottom: 1px solid rgba(106, 106, 106, 0.40);
+    padding-bottom: 24px;
+}
+
+.expanded_date .calendar .day {
+    border-radius: 6px;
+    border: 1px solid var(--Grey-40, rgba(106, 106, 106, 0.40));
+    width: 100%;
+    height: 100px;
+    margin-bottom: 8px;
+}
+
+.calendar .day:hover {
+    border: 1px solid var(--Grey-40, rgba(106, 106, 106, 0.40)) !important;
+}
+
+
+/* Week calendar */
+
+.weekcalendar {
+    position: relative;
+}
+
+.weekcalendar .fc-button-group {
+    position: unset;
+}
+
+.weekcalendar .fc-today-button {
+    display: none;
+}
+
+.weekcalendar .fc-timeGridWeek-button {
+    display: none;
+}
+
+.weekcalendar .fc-button-group .fc-prev-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.weekcalendar .fc-button-group .fc-next-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.weekcalendar .fc-button-group .fc-button {
+    background: transparent;
+    border: none;
+    color: #6A6A6A;
+}
+
+
+/* Week calendar */
+
+@media (max-width: 1620px) {
+    .calendar-container {
+        padding: 10px 3%;
+    }
+}
